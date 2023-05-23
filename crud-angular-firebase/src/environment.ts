@@ -1,20 +1,12 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-export const environment ={
-production: false,
-
-   firebaseConfig: {
-    apiKey: "AIzaSyBuRsZTSySihyz2u2rHO1nf6ZHGdLzVNro",
-    authDomain: "crud-angular-firebase-726c4.firebaseapp.com",
-    databaseURL: "https://crud-angular-firebase-726c4-default-rtdb.firebaseio.com",
-    projectId: "crud-angular-firebase-726c4",
-    storageBucket: "crud-angular-firebase-726c4.appspot.com",
-    messagingSenderId: "590713634106",
-    appId: "1:590713634106:web:e401ccae60bb96c8622403"
+export const environment = {
+  production: false,
+  firebaseConfig: {
+  apiKey: "AIzaSyBCs1ev2_i8No_0uVIsZVzvdBY7J5ahcKI",
+  authDomain: "crud-angular-projeto2.firebaseapp.com",
+  databaseURL: "https://crud-angular-projeto2-default-rtdb.firebaseio.com",
+  projectId: "crud-angular-projeto2",
+  storageBucket: "crud-angular-projeto2.appspot.com",
+  messagingSenderId: "403078195903",
+  appId: "1:403078195903:web:748c3bea0d0401c925740a"
   }
 };
-

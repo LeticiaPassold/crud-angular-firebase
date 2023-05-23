@@ -13,12 +13,19 @@ import { EditContatoComponent } from './contato/edit-contato/edit-contato.compon
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations',
+import { ToastrModule } from 'ngx-toastr';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     ListContatoComponent,
     AddContatoComponent,
-    EditContatoComponent
+    EditContatoComponent,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    ReactiveFormsModule
   ],
   imports: [
     BrowserModule,

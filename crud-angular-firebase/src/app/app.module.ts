@@ -24,9 +24,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
-    AppRoutingModule,
-    BowserAnimations
-
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

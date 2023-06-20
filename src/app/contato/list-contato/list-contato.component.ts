@@ -6,7 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 
 import { Contato } from '../contato';
 
-
+ 
 
 @Component({
 
@@ -28,7 +28,7 @@ export class ListContatoComponent implements OnInit {
 
   mostrarLoader: Boolean = true;
 
-
+ 
 
   constructor(
 
@@ -38,7 +38,7 @@ export class ListContatoComponent implements OnInit {
 
   ) {}
 
-
+ 
 
   ngOnInit() {
 

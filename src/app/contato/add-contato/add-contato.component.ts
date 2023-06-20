@@ -4,11 +4,11 @@ import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
 
 import { ContatoService } from '../contato.service';
 
-
+ 
 
 import { ToastrService } from 'ngx-toastr';
 
-
+ 
 
 @Component({
 
@@ -24,7 +24,7 @@ export class AddContatoComponent implements OnInit{
 
   contatoForm: FormGroup;
 
-
+ 
 
   constructor(
 
@@ -38,7 +38,7 @@ export class AddContatoComponent implements OnInit{
 
     }
 
-
+ 
 
     ngOnInit(){
 
@@ -46,7 +46,7 @@ export class AddContatoComponent implements OnInit{
 
     }
 
-
+ 
 
     createForm(){
 
@@ -62,7 +62,7 @@ export class AddContatoComponent implements OnInit{
 
     }
 
-
+ 
 
     resetForm(){
 
@@ -70,7 +70,7 @@ export class AddContatoComponent implements OnInit{
 
     }
 
-
+ 
 
     submitForm(){
 
@@ -84,7 +84,7 @@ export class AddContatoComponent implements OnInit{
 
     }
 
-
+ 
 
     get nome(){
 
@@ -92,7 +92,7 @@ export class AddContatoComponent implements OnInit{
 
     }
 
-
+ 
 
     get idade(){
 
@@ -100,7 +100,7 @@ export class AddContatoComponent implements OnInit{
 
     }
 
-
+ 
 
     get telefone(){
 
@@ -109,5 +109,3 @@ export class AddContatoComponent implements OnInit{
     }
 
 }
-
- 

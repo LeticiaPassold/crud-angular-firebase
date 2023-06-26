@@ -4,9 +4,9 @@
 
             pt-3 pb-2 mb-3 border-bottom">
 
-  <h2 class="h2">Lista de Contatos</h2>
+  <h2 class="h2">Lista de produtos</h2>
 
-  <a routerLink="/add-contato" class="btn btn-success" *ngIf="!listaVazia"> Adicionar Contato</a>
+  <a routerLink="/add-produto" class="btn btn-success" *ngIf="!listaVazia"> Adicionar produto</a>
 
 </div>
 
@@ -26,9 +26,9 @@
 
   <div class="text-center" *ngIf="listaVazia">
 
-    <p>Nenhum contato adicionado ainda</p>
+    <p>Nenhum produto adicionado ainda</p>
 
-    <a routerLink="/add-contato" class="btn btn-success"> Adicionar Contato</a>
+    <a routerLink="/add-produto" class="btn btn-success"> Adicionar produto</a>
 
   </div>
 
@@ -58,27 +58,27 @@
 
       <tbody>
 
-        <tr *ngFor="let contato of listaContatos | paginate: { itemsPerPage: 8, currentPage: page};
+        <tr *ngFor="let produto of listaprodutos | paginate: { itemsPerPage: 8, currentPage: page};
 
                     let i = index">
 
           <th scope="row">{{i+1}}</th>
 
-          <td>{{contato.nome}}</td>
+          <td>{{produto.nome}}</td>
 
-          <td>{{contato.idade}}</td>
+          <td>{{produto.idade}}</td>
 
-          <td>{{contato.telefone}}</td>
+          <td>{{produto.telefone}}</td>
 
           <td class="text-center action-block">
 
             <span class="btn btn-outline-primary btn-sm"
 
-              routerLink="/edit-contato/{{contato.$key}}">Editar</span>
+              routerLink="/edit-produto/{{produto.$key}}">Editar</span>
 
               <span class="mx-2 btn btn-outline-danger btn-sm"
 
-               (click)="deleteContato(contato)">Remover</span>
+               (click)="deleteproduto(produto)">Remover</span>
 
           </td>
 

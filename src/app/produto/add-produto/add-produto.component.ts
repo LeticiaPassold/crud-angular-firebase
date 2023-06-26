@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
 
-import { ContatoService } from '../contato.service';
+import { produtoService } from '../produto.service';
 
  
 
@@ -12,29 +12,29 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
 
-  selector: 'app-add-contato',
+  selector: 'app-add-produto',
 
-  templateUrl: './add-contato.component.html',
+  templateUrl: './add-produto.component.html',
 
-  styleUrls: ['./add-contato.component.css']
+  styleUrls: ['./add-produto.component.css']
 
 })
 
-export class AddContatoComponent implements OnInit{
+export class AddprodutoComponent implements OnInit{
 
-  contatoForm: FormGroup;
+  produtoForm: FormGroup;
 
  
 
   constructor(
 
-    private contatoService: ContatoService,
+    private produtoService: produtoService,
 
     private fb: FormBuilder,
 
     private toastr: ToastrService){
 
-      this.contatoForm = this.createForm();
+      this.produtoForm = this.createForm();
 
     }
 
@@ -42,7 +42,7 @@ export class AddContatoComponent implements OnInit{
 
     ngOnInit(){
 
-      this.contatoService.getContatoList();
+      this.produtoService.getprodutoList();
 
     }
 
@@ -66,7 +66,7 @@ export class AddContatoComponent implements OnInit{
 
     resetForm(){
 
-      this.contatoForm.reset();
+      this.produtoForm.reset();
 
     }
 
@@ -74,11 +74,11 @@ export class AddContatoComponent implements OnInit{
 
     submitForm(){
 
-      this.contatoService.insertContato(this.contatoForm.value);
+      this.produtoService.insertproduto(this.produtoForm.value);
 
       this.toastr.success(
 
-        this.contatoForm.controls['nome'].value + " adicionado"
+        this.produtoForm.controls['nome'].value + " adicionado"
 
       );
 
@@ -88,7 +88,7 @@ export class AddContatoComponent implements OnInit{
 
     get nome(){
 
-      return this.contatoForm.get('nome');
+      return this.produtoForm.get('nome');
 
     }
 
@@ -96,7 +96,7 @@ export class AddContatoComponent implements OnInit{
 
     get idade(){
 
-      return this.contatoForm.get('idade');
+      return this.produtoForm.get('idade');
 
     }
 
@@ -104,7 +104,7 @@ export class AddContatoComponent implements OnInit{
 
     get telefone(){
 
-      return this.contatoForm.get('telefone');
+      return this.produtoForm.get('telefone');
 
     }
 

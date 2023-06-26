@@ -2,7 +2,7 @@
 
 <div class="pt-3 pb-2 mb-3 border-bottom">
 
-  <h2 class="h2">Adicionar Contato</h2>
+  <h2 class="h2">Adicionar produto</h2>
 
 </div>
 
@@ -10,7 +10,7 @@
 
 <!-- FORMULÁRIO -->
 
-<form [formGroup]="contatoForm" (ngSubmit)="submitForm()" novalidate>
+<form [formGroup]="produtoForm" (ngSubmit)="submitForm()" novalidate>
 
   <!-- ADAPTA O TAMANHO DO FORMULÁRIO DE ACORDO COM A TELA-->
 
@@ -128,9 +128,9 @@
 
         </button>
 
-        <button type="submit" class="btn btn-success mx-2" [disabled]="!contatoForm.valid">
+        <button type="submit" class="btn btn-success mx-2" [disabled]="!produtoForm.valid">
 
-          Adicionar Contato
+          Adicionar produto
 
         </button>
 

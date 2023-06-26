@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddContatoComponent } from './add-contato.component';
+import { EditprodutoComponent } from './edit-produto.component';
 
-describe('AddContatoComponent', () => {
-  let component: AddContatoComponent;
-  let fixture: ComponentFixture<AddContatoComponent>;
+describe('EditprodutoComponent', () => {
+  let component: EditprodutoComponent;
+  let fixture: ComponentFixture<EditprodutoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddContatoComponent ]
+      declarations: [ EditprodutoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AddContatoComponent);
+    fixture = TestBed.createComponent(EditprodutoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

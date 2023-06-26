@@ -1,12 +1,12 @@
 <div class="pt-3 pb-2 mb-3 border-bottom">
 
-  <h2 class="h2">Editar Contato</h2>
+  <h2 class="h2">Editar produto</h2>
 
 </div>
 
 
 
-<form [formGroup]="contatoForm" (ngSubmit)="submitForm()" novalidate>
+<form [formGroup]="produtoForm" (ngSubmit)="submitForm()" novalidate>
 
   <div class="row">
 
@@ -100,9 +100,9 @@
 
       <div class="form-group text-end">
 
-        <button type="submit" class="btn btn-info mx-2" [disabled]="!contatoForm.valid">
+        <button type="submit" class="btn btn-info mx-2" [disabled]="!produtoForm.valid">
 
-          Editar Contato
+          Editar produto
 
         </button>
 

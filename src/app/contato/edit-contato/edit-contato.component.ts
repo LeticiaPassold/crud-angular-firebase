@@ -56,9 +56,9 @@ export class EditContatoComponent implements OnInit{
 
       nome: new FormControl('', Validators.required),
 
-      idade: new FormControl('', Validators.required),
+      quantidade: new FormControl('', Validators.required),
 
-      telefone: new FormControl('', [Validators.required,  Validators.pattern('^[0-9]+$')])
+      preco: new FormControl('', [Validators.required,  Validators.pattern('^[0-9]+$')])
 
     });
 
@@ -114,20 +114,18 @@ export class EditContatoComponent implements OnInit{
 
 
 
-  get idade(){
+  get quantidade(){
 
-    return this.contatoForm.get('idade');
+    return this.contatoForm.get('quantidade');
 
   }
 
 
 
-  get telefone(){
+  get preco(){
 
-    return this.contatoForm.get('telefone');
+    return this.contatoForm.get('preco');
 
   }
 
 }
-
- 

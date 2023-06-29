@@ -16,7 +16,7 @@
 
         <div class="col-md-12 mb-3">
 
-          <label>Nome</label>
+          <label>Nome do produto</label>
 
           <input type="text" id="nome" class="form-control" formControlName="nome" required/>
 
@@ -24,7 +24,7 @@
 
           <p *ngIf="nome?.touched && nome?.invalid" class="error">
 
-            <sup>*</sup>Nome obrigatório
+            <sup>*</sup>Nome do produto obrigatório
 
           </p>
 
@@ -36,13 +36,13 @@
 
         <div class="col-md-12 mb-3">
 
-          <label>Idade</label>
+          <label>Quantquantidade</label>
 
           <input
 
             type="number"
 
-            formControlName="idade"
+            formControlName="quantidade"
 
             class="form-control"
 
@@ -52,9 +52,9 @@
 
           <!-- errors-->
 
-          <p *ngIf="idade?.touched && idade?.invalid" class="error">
+          <p *ngIf="quantidade?.touched && quantidade?.invalid" class="error">
 
-            <sup>*</sup>Informe a idade
+            <sup>*</sup>Informe a quantquantidade
 
           </p>
 
@@ -66,13 +66,13 @@
 
         <div class="col-md-12 mb-3">
 
-          <label>Telefone:</label>
+          <label>preco:</label>
 
           <input
 
             type="text"
 
-            formControlName="telefone"
+            formControlName="preco"
 
             class="form-control"
 
@@ -82,13 +82,13 @@
 
           <!-- errors-->
 
-          <p *ngIf="telefone?.touched && telefone?.invalid" class="error">
+          <p *ngIf="preco?.touched && preco?.invalid" class="error">
 
-            <sup>*</sup>Informe telefone
+            <sup>*</sup>Informe o preco
 
           </p>
 
-          <p *ngIf="telefone?.errors?.['pattern']" class="error">
+          <p *ngIf="preco?.errors?.['pattern']" class="error">
 
             <sup>*</sup>Use apenas números
 
@@ -102,7 +102,7 @@
 
         <button type="submit" class="btn btn-info mx-2" [disabled]="!contatoForm.valid">
 
-          Editar Contato
+          Editar Produto
 
         </button>
 

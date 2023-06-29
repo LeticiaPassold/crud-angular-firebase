@@ -2,7 +2,7 @@
 
 <div class="pt-3 pb-2 mb-3 border-bottom">
 
-  <h2 class="h2">Adicionar Contato</h2>
+  <h2 class="h2">Adicionar Produto</h2>
 
 </div>
 
@@ -28,7 +28,7 @@
 
             [ngClass]="{'text-danger': nome?.touched && nome?.invalid}"
 
-            for="nome" class="form-label">Nome</label>
+            for="nome" class="form-label">Nome do produto</label>
 
           <input
 
@@ -38,7 +38,7 @@
 
           <!-- errors-->
 
-          <div class="invalid-feedback"><sup>*</sup>Nome obrigatório</div>
+          <div class="invalid-feedback"><sup>*</sup>Nome do produto obrigatório</div>
 
         </div>
 
@@ -46,7 +46,7 @@
 
       <!-- LINHA 1 - CAMPO NOME -->
 
-      <!-- LINHA 2 - CAMPO IDADE -->
+      <!-- LINHA 2 - CAMPO Quantquantidade -->
 
       <div class="row">
 
@@ -54,17 +54,17 @@
 
           <label
 
-            [ngClass]="{'text-danger': idade?.touched && idade?.invalid}"
+            [ngClass]="{'text-danger': quantidade?.touched && quantidade?.invalid}"
 
-            for="idade" class="form-label">Idade</label>
+            for="quantidade" class="form-label">Quantidade</label>
 
           <input
 
-            [ngClass]="{'is-invalid': idade?.touched && idade?.invalid, 'is-valid': idade?.touched && idade?.valid}"
+            [ngClass]="{'is-invalid': quantidade?.touched && quantidade?.invalid, 'is-valid': quantidade?.touched && quantidade?.valid}"
 
             type="number"
 
-            formControlName="idade"
+            formControlName="quantidade"
 
             class="form-control"
 
@@ -74,15 +74,13 @@
 
           <!-- Validation FeedBack -->
 
-          <div class="invalid-feedback"><sup>*</sup>Idade obrigatório</div>
+          <div class="invalid-feedback"><sup>*</sup>Quantidade obrigatório</div>
 
         </div>
 
       </div>
 
-      <!-- LINHA 2 - CAMPO IDADE -->
-
-      <!-- LINHA 3 - CAMPO TELEFONE -->
+      <!-- LINHA 2 - CAMPO Quantquantidade -->
 
       <div class="row">
 
@@ -90,17 +88,17 @@
 
           <label
 
-            [ngClass]="{'text-danger': telefone?.touched && telefone?.invalid}"
+            [ngClass]="{'text-danger': preco?.touched && preco?.invalid}"
 
-            for="telefone" class="form-label">Telefone:</label>
+            for="preco" class="form-label">preço:</label>
 
           <input
 
-            [ngClass]="{'is-invalid': telefone?.touched && telefone?.invalid, 'is-valid': telefone?.touched && telefone?.valid}"
+            [ngClass]="{'is-invalid': preco?.touched && preco?.invalid, 'is-valid': preco?.touched && preco?.valid}"
 
             type="text"
 
-            formControlName="telefone"
+            formControlName="preco"
 
             class="form-control"
 
@@ -116,7 +114,7 @@
 
       </div>
 
-      <!-- LINHA 3 - CAMPO TELEFONE -->
+      <!-- LINHA 3 - CAMPO preco -->
 
       <!-- BOTÕES DO FORMULÁRIO -->
 
@@ -130,7 +128,7 @@
 
         <button type="submit" class="btn btn-success mx-2" [disabled]="!contatoForm.valid">
 
-          Adicionar Contato
+          Adicionar Produto
 
         </button>
 

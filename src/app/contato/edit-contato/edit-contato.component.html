@@ -66,11 +66,11 @@
 
         <div class="col-md-12 mb-3">
 
-          <label>preco:</label>
+          <label>Preço:</label>
 
           <input
 
-            type="text"
+            type="number"
 
             formControlName="preco"
 
@@ -84,15 +84,11 @@
 
           <p *ngIf="preco?.touched && preco?.invalid" class="error">
 
-            <sup>*</sup>Informe o preco
-
-          </p>
+            <sup>*</sup>Informe o preço</p>
 
           <p *ngIf="preco?.errors?.['pattern']" class="error">
 
-            <sup>*</sup>Use apenas números
-
-          </p>
+            <sup>*</sup>Use apenas números </p>
 
         </div>
 

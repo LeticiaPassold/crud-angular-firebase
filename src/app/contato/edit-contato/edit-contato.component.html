@@ -36,7 +36,7 @@
 
         <div class="col-md-12 mb-3">
 
-          <label>Quantquantidade</label>
+          <label>Quantidade</label>
 
           <input
 
@@ -54,7 +54,7 @@
 
           <p *ngIf="quantidade?.touched && quantidade?.invalid" class="error">
 
-            <sup>*</sup>Informe a quantquantidade
+            <sup>*</sup>Informe a quantidade
 
           </p>
 
@@ -70,7 +70,7 @@
 
           <input
 
-            type="number"
+            type="text"
 
             formControlName="preco"
 
@@ -84,11 +84,15 @@
 
           <p *ngIf="preco?.touched && preco?.invalid" class="error">
 
-            <sup>*</sup>Informe o preço</p>
+            <sup>*</sup>Informe o preco
+
+          </p>
 
           <p *ngIf="preco?.errors?.['pattern']" class="error">
 
-            <sup>*</sup>Use apenas números </p>
+            <sup>*</sup>Use apenas números
+
+          </p>
 
         </div>
 

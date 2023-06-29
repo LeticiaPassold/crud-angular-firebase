@@ -90,13 +90,13 @@
 
             [ngClass]="{'text-danger': preco?.touched && preco?.invalid}"
 
-            for="preco" class="form-label">Preço:</label>
+            for="preco" class="form-label">preço:</label>
 
           <input
 
             [ngClass]="{'is-invalid': preco?.touched && preco?.invalid, 'is-valid': preco?.touched && preco?.valid}"
 
-            type="number"
+            type="text"
 
             formControlName="preco"
 

@@ -15,8 +15,9 @@
   z-index: 99999;
 
 }
+
 .h2{
-  color:#0a8891;
+  color:#0a8891 ;
 }
 
 .loader {
@@ -42,6 +43,7 @@
 }
 
 
+
 @keyframes spin {
 
   0% { transform: rotate(0deg); }
@@ -50,4 +52,3 @@
 
 }
 
- 

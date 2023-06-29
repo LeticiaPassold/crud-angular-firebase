@@ -6,7 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 
 import { Contato } from '../contato';
 
- 
+
 
 @Component({
 
@@ -28,7 +28,7 @@ export class ListContatoComponent implements OnInit {
 
   mostrarLoader: Boolean = true;
 
- 
+
 
   constructor(
 
@@ -38,7 +38,7 @@ export class ListContatoComponent implements OnInit {
 
   ) {}
 
- 
+
 
   ngOnInit() {
 
@@ -78,7 +78,7 @@ export class ListContatoComponent implements OnInit {
 
   deleteContato(contato: Contato) {
 
-    if (window.confirm('Tem certeza que deseja remover o contato?')) {
+    if (window.confirm('Tem certeza que deseja remover o produto?')) {
 
       if (contato.$key != null) {
 
